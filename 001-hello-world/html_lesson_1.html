@@ -1,0 +1,41 @@
+<HTML>
+	<HEAD>
+		<title>My First Webpage</title>
+		<style>
+			body {background-color: powderblue;}
+			p    {color: red;}
+			h1 {
+			  color: blue;
+			  font-family: verdana;
+			  font-size: 300%;
+			}
+			.boom {
+				color: red;
+				font-size: 1000%;
+			}
+		</style>
+		<script>
+			function myFunction() { 
+			  document.getElementById("demo").innerHTML = "<h1>Hello JavaScript!</h1>";
+			}
+			function myFunction2() { 
+			  document.getElementById("demo").innerHTML = "This is a paragraph!";
+			}
+		</script>
+	</HEAD>
+	<BODY>
+
+		<h1 style="color:blue;">Heading</h1>
+		<p id="demo">This is a paragraph!</p>
+
+		<button type="button" onclick="myFunction()">To JS!</button><button type="button" onclick="myFunction2()">To P!</button>
+
+
+		<br/>
+		<img src="https://www.sideshow.com/storage/product-images/905193/uss-enterprise-ncc-1701-d_star-trek_feature.jpg"/>
+
+		<div>this is my weiner</div>
+		<div class="boom">this is my stiffy</div>
+
+	</BODY>
+</HTML>
