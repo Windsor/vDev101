@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Imposter Who? — Party Game Framework</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Engine -->
+  <script src="js/engine.js"></script>
+
+  <!-- Game data -->
+  <script src="js/data/words.js"></script>
+
+  <!-- Game modules (each one self-registers) -->
+  <script src="js/games/registry.js"></script>
+  <script src="js/games/imposter.js"></script>
+  <script src="js/games/whodunnit.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="js/main.js"></script>
+</body>
+</html>
