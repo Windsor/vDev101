@@ -205,3 +205,59 @@ html, body {
 }
 .tally .count { font-variant-numeric: tabular-nums; min-width: 20px; text-align: right; }
 .actions-row { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+
+/* ---------- Werewolf-specific ---------- */
+.night {
+  background: linear-gradient(180deg, #0c0e2a 0%, #1a1d44 100%);
+  border-color: rgba(106, 125, 255, 0.3);
+}
+.day {
+  background: var(--card);
+  padding: 24px;
+  border-radius: var(--radius);
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.day h2 { margin: 0 0 8px; }
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: left;
+  margin: 16px 0;
+}
+.two-col h3 {
+  margin: 0 0 8px; font-size: 12px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.two-col ul { list-style: none; padding: 0; margin: 0; }
+.two-col li {
+  padding: 6px 10px; background: var(--bg-2); border-radius: 8px;
+  margin-bottom: 4px; font-size: 14px;
+  display: flex; justify-content: space-between; align-items: center; gap: 6px;
+}
+
+.dead { color: var(--muted); text-decoration: line-through; opacity: 0.7; }
+
+.role-tag {
+  color: var(--accent-2); font-weight: 600; font-size: 12px;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+
+.roster { list-style: none; padding: 0; margin: 12px 0; }
+.roster li {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 14px; background: var(--bg-2); border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.log {
+  list-style: none; padding: 12px 16px; margin: 12px 0;
+  text-align: left; font-size: 14px;
+  background: var(--bg-2); border-radius: 10px;
+}
+.log li { padding: 4px 0; color: var(--muted); }
+.log strong { color: var(--text); }
+
+.vote-choice.abstain { background: transparent; color: var(--muted); }
