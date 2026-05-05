@@ -261,3 +261,58 @@ html, body {
 .log strong { color: var(--text); }
 
 .vote-choice.abstain { background: transparent; color: var(--muted); }
+
+/* ---------- Two Truths & a Lie ---------- */
+.truths-form { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+.truths-form .field input,
+.truths-form .field select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--bg-2);
+  color: var(--text);
+  font-size: 16px;
+}
+.truths-form .field span {
+  color: var(--muted); font-size: 13px; margin-bottom: 4px;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+
+.statements {
+  text-align: left;
+  background: var(--bg-2);
+  padding: 12px 16px 12px 36px;
+  border-radius: 10px;
+  margin: 16px 0;
+  list-style: none;
+  counter-reset: stmt;
+}
+.statements li {
+  padding: 6px 0;
+  position: relative;
+}
+.statements li.lie { color: var(--accent); font-weight: 700; }
+.statements li .role-tag { margin-left: 8px; color: var(--accent); }
+
+.statement-grid { display: grid; gap: 8px; margin: 16px 0; }
+.statement-choice {
+  text-align: left;
+  padding: 14px 16px;
+  background: var(--bg-2);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.statement-choice:hover { border-color: var(--accent); }
+.statement-choice strong { color: var(--accent-2); margin-right: 6px; }
+
+/* ---------- Most Likely To ---------- */
+.question-word {
+  font-size: 22px !important;
+  line-height: 1.3;
+  font-weight: 700;
+}
