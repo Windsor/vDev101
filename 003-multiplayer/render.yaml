@@ -1,0 +1,16 @@
+# Render blueprint — auto-deploys this service on every push.
+# Connect the repo at https://dashboard.render.com → "New" → "Blueprint",
+# pick this repo and branch, then click Apply.
+services:
+  - type: web
+    name: imposter-multiplayer
+    runtime: node
+    rootDir: 003-multiplayer
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
